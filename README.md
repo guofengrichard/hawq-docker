@@ -14,16 +14,12 @@ https://docs.docker.com/
 git clone https://github.com/guofengrichard/hawq-docker.git .
 ```
 * Get the docker images
-  * pull the images from docker hub (recommended)
 ```
   cd hawq-docker
-  make pull
-``` 
-  * Or build the images from your local host
-```
-  cd hawq-docker
+  make pull (recommended)
+OR
   make build
-```
+``` 
 * setup a 5 nodes virtual cluster for Apache HAWQ build and test.
 ```
 make run
