@@ -4,7 +4,7 @@ hawq-docker is based on *wangzw's* repo *hawq-devel-env*. It is the docker image
 
 ~~Currently only CentOS 7 is supported. CentOS 6 will be supported soon.~~
 Both CentOS 7 and CentOS 6 are supported now.
-Change variable **OS_VERSION** (:= centos7 OR centos6) to switch between CentOS 7 and CentOS 6.
+Change variable **OS_VERSION** (:= centos7 OR centos6) in Makefile to switch between CentOS 7 and CentOS 6.
 
 Take CentOS 7 as an example below.
 
