@@ -2,7 +2,11 @@
 
 hawq-docker is based on *wangzw's* repo *hawq-devel-env*. It is the docker images and scripts to help developers of Apache HAWQ to setup building and testing environment with docker.
 
-Currently only CentOS 7 is supported. CentOS 6 will be supported soon.
+~~Currently only CentOS 7 is supported. CentOS 6 will be supported soon.~~
+Both CentOS 7 and CentOS 6 are supported now.
+Change variable **OS_VERSION** (:= centos7 OR centos6) to switch between CentOS 7 and CentOS 6.
+
+Take CentOS 7 as an example below.
 
 # Install docker
 * following the instructions to install docker.
@@ -56,6 +60,8 @@ cd /data/hawq
 make
 make install
 ```
+(When you are using CentOS 6, run command `scl enable devtoolset-2 bash` before
+configuring hawq and run command `exit` after installing hawq.) 
 * modify Apache HAWQ configuration
 ```
 sed 's|localhost|centos7-namenode|g' -i /data/hawq-dev/etc/hawq-site.xml
