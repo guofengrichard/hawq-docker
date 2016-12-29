@@ -1,0 +1,4 @@
+1. Extract the setup logic into a separate script.
+2. Have the hawq cluster with specific version pre-installed and pre-configured
+3. Complete OS requirements in Dockerfile.
+4. Identify and remove unnecessary packages in CentOS 6 docker image.
